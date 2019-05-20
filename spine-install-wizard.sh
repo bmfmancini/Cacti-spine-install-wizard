@@ -66,6 +66,9 @@ chmod u+s /usr/local/spine/bin/spine
 
 fi
 
+cp /usr/local/spine/etc/spine.conf.dist  /usr/local/spine/etc/spine.conf
+
+
 
 echo "Spine has been compiled and installed you will now need to configure your DB credentials to /usr/local/spine/etc/spine.conf"
 
