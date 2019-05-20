@@ -40,7 +40,7 @@ apt-get  install -y build-essential dos2unix dh-autoreconf libtool  help2man lib
 echo " Which version of spine would you like to use ? Hit enter for the latest or enter the release vesrion i.e 1.2.3 Usually should Match your installed version of Cacti"
 read version
 
-if [ $version == "" ]
+if [$version = ""]
 then
 
 echo "downloadinglatest version of spine  and compling "
