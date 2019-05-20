@@ -64,6 +64,7 @@ make install
 chown root:root /usr/local/spine/bin/spine
 chmod u+s /usr/local/spine/bin/spine
 
+fi
 
 
 echo "Spine has been compiled and installed you will now need to configure your DB credentials to /usr/local/spine/etc/spine.conf"
