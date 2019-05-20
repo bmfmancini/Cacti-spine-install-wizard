@@ -22,8 +22,8 @@
 
 
 
-echo " this script requires git and unzip"
-apt-get install unzip git -y
+echo " this script requires unzip"
+apt-get install unzip  -y
 
 
 echo " 
