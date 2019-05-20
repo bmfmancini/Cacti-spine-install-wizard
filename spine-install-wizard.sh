@@ -30,6 +30,7 @@ echo "
 This script will download and compile/install the SPINE poller used for Larger Cacti installations
 the script will download all of the neccessary files and libraries needed to compile spine
 "
+sleep 2
 
 
 ##Download packages needed for spine
