@@ -74,4 +74,25 @@ cp /usr/local/spine/etc/spine.conf.dist  /usr/local/spine/etc/spine.conf
 
 echo "Spine has been compiled and installed you will now need to configure your DB credentials to /usr/local/spine/etc/spine.conf"
 
+echo "Would you like to configure you spine.conf file? y or n"
+read answer
+if [ $answer == "y" ]
+then
+echo "Enter database user"
+read user
+echo "enter database password"
+read password
+echo "enter database name"
+read databasename
 
+sed -i -e 's@^DB_Host.*@DB_Host  127.0.0.1@g' /usr/local/spine/etc/spine.conf
+sed -i -e 's@^DB_User.*@DB_User  '$user'@g' /usr/local/spine/etc/spine.conf
+sed -i -e 's@^DB_Pass.*@DB_Pass  '$password'@g' /usr/local/spine/etc/spine.conf
+sed -i -e 's@^DB_Database.*@DB_Database  '$databasename'@g' /usr/local/spine/etc/spine.conf
+
+else
+
+
+echo "spine install completed"
+
+fi
