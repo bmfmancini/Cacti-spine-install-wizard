@@ -34,8 +34,8 @@ sleep 2
 
 
 ##Download packages needed for spine
-apt-get  install -y build-essential dos2unix dh-autoreconf libtool  help2man libssl-dev libmysql++-dev  default-libmysqlclient-dev  librrds-perl libsnmp-dev 
-
+apt-get  install -y build-essential dos2unix dh-autoreconf libtool  help2man libssl-dev   default-libmysqlclient-dev  librrds-perl libsnmp-dev 
+apt-get install -y libmysql++-dev
 
 echo " Which version of spine would you like to use ? Hit enter for the latest or enter the release vesrion i.e 1.2.3 Usually should Match your installed version of Cacti"
 read version
